@@ -1,1 +1,9 @@
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
+
+const div = styled.div`
+
+`
+
+export {
+    div
+}
