@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   BtnWarmComponent,
@@ -52,7 +53,29 @@ export default function Login() {
             </div>
             <div className="row mt-3">
               <div className="col-md-12 text-center ">
-                <BtnWarmComponent desc={"Entrar"} w={"100%"} _className={"p-3"}/>
+                <BtnWarmComponent
+                  desc={"Criar"}
+                  w={"100%"}
+                  _className={"p-3"}
+                />
+              </div>
+            </div>
+            <div className="row mt-3">
+              <div className="col-md-12 d-flex justify-content-center">
+                <Link
+                  href={"signup"}
+                  className={"text-decoration-none text-dark"}
+                >
+                  <small>Não tem conta? Crie</small>
+                </Link>
+              </div>
+              <div className="col-md-12 d-flex justify-content-center">
+                <Link
+                  href={"/"}
+                  className={"text-decoration-none text-dark"}
+                >
+                  <small>Voltar</small>
+                </Link>
               </div>
             </div>
           </div>

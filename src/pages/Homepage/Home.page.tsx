@@ -43,7 +43,7 @@ export default function HomePage() {
               />
             </Link>
 
-            <Link href={"login"}>
+            <Link href={"signup"}>
               <BtnPrimaryComponent desc={"Criar Conta"} _className={"ms-3"} />
             </Link>
           </div>
