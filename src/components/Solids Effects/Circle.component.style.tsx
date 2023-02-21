@@ -23,6 +23,16 @@ export const CircleBottom = styled(Circle)`
   position: fixed;
 `;
 
+export const CircleTopRight = styled(Circle)`
+  left: 0;
+  position: fixed;
+`;
+
+export const CircleBottomLeft = styled(Circle)`
+  bottom: 0;
+  position: fixed;
+`;
+
 export const Content = styled.div`
   padding: 20px;
 
