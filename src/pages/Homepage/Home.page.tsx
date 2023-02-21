@@ -19,7 +19,7 @@ export default function HomePage() {
         <CircleTopComponent
           image={"/Ellipse1.png"}
           width={"450px"}
-          height={"350px"}
+          height={"450px"}
           top={""}
           type={"default"}
         />

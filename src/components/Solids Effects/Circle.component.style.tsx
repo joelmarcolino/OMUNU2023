@@ -7,13 +7,12 @@ export const Circle = styled.div<any>`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
+  justify-content: end;
   float: right;
   right: 0;
   position: absolute;
+
+ 
 `;
 
 export const CircleBottom = styled(Circle)`
