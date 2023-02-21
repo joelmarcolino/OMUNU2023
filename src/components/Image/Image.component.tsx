@@ -7,8 +7,8 @@ export const MyImageComponent = ({name, width, height, id}: any) => {
     <Image
       src={name}
       alt="Picture of the author"
-      width={width || 100}
-      height={height || 100}
+      width={width}
+      height={height}
       id={id}
       className="img-thumbnail border-0 bg-transparent"
     />
