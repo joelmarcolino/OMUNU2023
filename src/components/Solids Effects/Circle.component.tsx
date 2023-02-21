@@ -1,5 +1,5 @@
 import React from "react";
-import { Circle, Content } from "./Circle.component.style";
+import { Circle, Content, CircleBottom } from "./Circle.component.style";
 
 export default function CircleComponent({
   image,
@@ -27,6 +27,19 @@ export default function CircleComponent({
           <></>
         )}
       </Circle>
+    </>
+  );
+}
+
+export function CircleBottomComponent({
+  image,
+  width,
+  height,
+}: any) {
+  return (
+    <>
+      <CircleBottom image={image} width={width} height={height} >
+      </CircleBottom>
     </>
   );
 }

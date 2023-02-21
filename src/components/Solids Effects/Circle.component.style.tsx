@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Circle = styled.div<any>`
   top: ${(props) => props.top};
   background: url(${(props) => props.image}) no-repeat;
-    background-size: cover;
+  background-size: cover;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   display: flex;
@@ -16,6 +16,13 @@ export const Circle = styled.div<any>`
   position: absolute;
 `;
 
+export const CircleBottom = styled(Circle)`
+  float: left;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+`;
+
 export const Content = styled.div`
   padding: 20px;
 
@@ -23,7 +30,6 @@ export const Content = styled.div`
     color: #fff;
     font-weight: 800;
     padding-left: 30px;
-
   }
 
   .subtitle {
@@ -37,6 +43,5 @@ export const Content = styled.div`
     font-size: 1.3rem;
     line-height: 26px;
     padding-left: 30px;
-
   }
 `;
