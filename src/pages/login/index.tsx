@@ -17,6 +17,7 @@ export default function Login() {
         height={"300px"}
         location={true}
       />
+
       <LoginContainer className="container-fluid">
         <LoginCard className="container">
           <div className="form">
@@ -69,6 +70,7 @@ export default function Login() {
                   <small>Não tem conta? Crie</small>
                 </Link>
               </div>
+
               <div className="col-md-12 d-flex justify-content-center">
                 <Link
                   href={"/"}
@@ -77,10 +79,19 @@ export default function Login() {
                   <small>Voltar</small>
                 </Link>
               </div>
+              <div className="col-md-12 d-flex justify-content-center">
+                <Link
+                  href={"change_password"}
+                  className={"text-decoration-none text-dark"}
+                >
+                  <small className="text-danger">Esqueceu password?</small>
+                </Link>
+              </div>
             </div>
           </div>
         </LoginCard>
       </LoginContainer>
+
       <CircleBottomComponent
         image={"/Ellipse7.png"}
         width={"300px"}
