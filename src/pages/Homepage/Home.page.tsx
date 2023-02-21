@@ -1,14 +1,11 @@
-import {
-  faCopyright,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCopyright, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 import {
   BtnPrimaryComponent,
   BtnSecondaryComponent,
-  BtnWarmComponent,
-  CircleComponent,
+  CircleTopComponent,
   HomeNavbarComponent,
 } from "../../components/Components";
 import { Description } from "./Home.page.style";
@@ -19,7 +16,7 @@ export default function HomePage() {
       <div className="container-fluid p-0">
         <HomeNavbarComponent />
 
-        <CircleComponent
+        <CircleTopComponent
           image={"/Ellipse1.png"}
           width={"450px"}
           height={"350px"}
@@ -28,7 +25,7 @@ export default function HomePage() {
         />
       </div>
       <div>
-        <CircleComponent
+        <CircleTopComponent
           image={"/Ellipse2.png"}
           width={"100px"}
           height={"400px"}
@@ -38,12 +35,17 @@ export default function HomePage() {
       <div className="container">
         <Description className="col-md-12 col-sm-12">
           <div className="content ">
-            <BtnSecondaryComponent
-              desc={"Autenticar-se"}
-              _className={""}
-              icon={""}
-            />
-            <BtnPrimaryComponent desc={"Criar Conta"} _className={"ms-3"} />
+            <Link href={"login"}>
+              <BtnSecondaryComponent
+                desc={"Autenticar-se"}
+                _className={""}
+                icon={""}
+              />
+            </Link>
+
+            <Link href={"login"}>
+              <BtnPrimaryComponent desc={"Criar Conta"} _className={"ms-3"} />
+            </Link>
           </div>
         </Description>
       </div>
