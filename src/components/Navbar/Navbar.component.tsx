@@ -9,14 +9,17 @@ export function HomeNavbarComponent() {
     {
       desc: "Home",
       active: true,
+      link: "/"
     },
     {
       desc: "Livros",
       active: false,
+      link: "books"
     },
     {
       desc: "Sobre",
       active: false,
+      link: "about"
     },
   ]);
 
@@ -25,15 +28,15 @@ export function HomeNavbarComponent() {
   return (
     <>
       <Navbar>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" href="/">
               <MyImageComponent
                 name={"/Logo omomu.png"}
                 width={200}
                 height={200}
               />
-            </a>
+            </Link>
             <button
               className="navbar-toggler border-0 shadow-none"
               type="button"
@@ -71,7 +74,7 @@ export function HomeNavbarComponent() {
                             className={
                               item.active ? "nav-link active" : "nav-link"
                             }
-                            href="#"
+                            href={item.link}
                           >
                             {item.desc}
                           </Link>
