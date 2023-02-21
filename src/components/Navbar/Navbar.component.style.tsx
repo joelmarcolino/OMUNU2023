@@ -4,8 +4,7 @@ const Navbar = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
-  background-color: #fff;
-  border: 1px solid;
+  height: 70px;
 
   .fixed-top {
     z-index: 999999999;

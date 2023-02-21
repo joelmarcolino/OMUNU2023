@@ -48,7 +48,7 @@ export function HomeNavbarComponent() {
             </button>
 
             <div
-              className="offcanvas offcanvas-end text-bg-dark"
+              className="offcanvas offcanvas-end"
               tabIndex={-1}
               id="offcanvasDarkNavbar"
               aria-labelledby="offcanvasDarkNavbarLabel"
@@ -59,7 +59,7 @@ export function HomeNavbarComponent() {
                 </h5>
                 <button
                   type="button"
-                  className="btn-close btn-close-white"
+                  className="btn-close"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
