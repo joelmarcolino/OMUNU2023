@@ -14,7 +14,7 @@ export const DescriptionImg = styled.div`
   z-index: 999999;
 `;
 
-export const CardAbout = styled.div`
+export const AboutCard = styled.div`
   margin: 20px;
   padding: 20px;
   margin-top: 145px;

@@ -1,11 +1,12 @@
 import React from "react";
 import {
   CircleBottomComponent,
-  CircleComponent,
+  CircleTopComponent,
   HeadingComponent,
   HomeNavbarComponent,
 } from "../../components/Components";
-import { DescriptionImg, CardAbout } from "./index.style";
+
+import { DescriptionImg, AboutCard } from "./index.style";
 
 export default function About() {
   const description =
@@ -15,7 +16,7 @@ export default function About() {
     <>
       <HomeNavbarComponent />
       <div className="container-fluid">
-        <CircleComponent
+        <CircleTopComponent 
           image={"/Ellipse4.png"}
           width={"100px"}
           height={"400px"}
@@ -29,7 +30,7 @@ export default function About() {
         />
       </div>
       <div className="container">
-        <CardAbout className="row">
+        <AboutCard className="row">
           <div className="col-md-12">
             <HeadingComponent type={"h1"}>Omunu</HeadingComponent>
           </div>
@@ -39,7 +40,7 @@ export default function About() {
           <div className="col-sm-6 col-md-6">
             <DescriptionImg></DescriptionImg>
           </div>
-        </CardAbout>
+        </AboutCard>
       </div>
     </>
   );
