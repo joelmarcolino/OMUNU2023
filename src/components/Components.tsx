@@ -8,13 +8,13 @@ import CardComponent from "./Cards/Card.component";
 import HeadingComponent from "./heading/Heading.component";
 import { MyImageComponent } from "./Image/Image.component";
 import { HomeNavbarComponent } from "./Navbar/Navbar.component";
-import CircleComponent, { CircleBottomComponent } from "./Solids Effects/Circle.component";
+import CircleTopComponent, { CircleBottomComponent } from "./Solids Effects/Circle.component";
 
 export {
   MyImageComponent,
   BtnDefaultComponent,
   BtnSecondaryComponent,
-  CircleComponent,
+  CircleTopComponent,
   BtnWarmComponent,
   HomeNavbarComponent,
   BtnPrimaryComponent,
