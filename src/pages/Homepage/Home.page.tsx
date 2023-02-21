@@ -1,18 +1,15 @@
 import {
   faCopyright,
   faHeart,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import {
-  BtnDefaultComponent,
   BtnPrimaryComponent,
   BtnSecondaryComponent,
   BtnWarmComponent,
   CircleComponent,
   HomeNavbarComponent,
-  MyImageComponent,
 } from "../../components/Components";
 import { Description } from "./Home.page.style";
 
@@ -41,12 +38,12 @@ export default function HomePage() {
       <div className="container">
         <Description className="col-md-12 col-sm-12">
           <div className="content ">
-            <BtnPrimaryComponent
+            <BtnSecondaryComponent
               desc={"Autenticar-se"}
               _className={""}
               icon={""}
             />
-            <BtnWarmComponent desc={"Criar Conta"} _className={"ms-3"} />
+            <BtnPrimaryComponent desc={"Criar Conta"} _className={"ms-3"} />
           </div>
         </Description>
       </div>

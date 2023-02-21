@@ -11,6 +11,7 @@ export const Description = styled.div`
   justify-content: center;
   display: flex;
   margin-bottom: 20px;
+  
   .content {
     position: absolute;
     bottom: 0;
