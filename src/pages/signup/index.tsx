@@ -17,6 +17,7 @@ export default function Signup() {
         width={"250px"}
         height={"400px"}
       />
+
       <SignupContainer className="container-fluid">
         <SignupCard className="container">
           <div className="form">
@@ -96,6 +97,7 @@ export default function Signup() {
           </div>
         </SignupCard>
       </SignupContainer>
+      
       <CircleBottomComponent
         image={"/Ellipse9.png"}
         width={"350px"}

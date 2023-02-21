@@ -26,9 +26,9 @@ export default function CircleTopComponent({
                   LIVRO DIGITAL <br /> INFANTIL
                 </p>
                 <p className="subject">
-                  Melhor site para estimular o cérebro do seu filho com uma
+                  Melhor site para estimular <br /> o cérebro do seu filho com uma
                 </p>
-                <p className="display-6 subtitle">EXPERIÊNCIA INTELIGENTE</p>
+                <p className="display-6 subtitle">EXPERIÊNCIA <br /> INTELIGENTE</p>
               </Content>
             </>
           ) : (

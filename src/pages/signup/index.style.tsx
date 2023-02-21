@@ -8,6 +8,7 @@ export const SignupCard = styled.div`
   width: 550px;
   position: relative;
   box-shadow: 0px 0px 8px #00000045;
+  background: #fff;
   z-index: 999999;
   display: flex;
   justify-content: center;
