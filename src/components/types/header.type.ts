@@ -1,4 +1,5 @@
 export type navMenu = {
     desc: string;
-    active: boolean
+    active: boolean;
+    link: string
 } 
