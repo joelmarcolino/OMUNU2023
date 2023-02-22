@@ -1,5 +1,6 @@
 import { faCopyright, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Head} from "next/document"
 import Link from "next/link";
 import React from "react";
 import {
@@ -13,6 +14,9 @@ import { Description } from "./Home.page.style";
 export default function HomePage() {
   return (
     <>
+      <Head>
+        <title>OMUNU | Inicio</title>
+      </Head>
       <div className="container-fluid p-0">
         <HomeNavbarComponent />
 
