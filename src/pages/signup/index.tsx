@@ -3,6 +3,7 @@ import { Input } from "../../components/input"
 import { ImageComponent } from "../../components/Image/Image"
 import logo from "../../../public/omunu_logo.png"
 import { Circle } from "../../components/Solids Effects/Circle"
+import { Social } from "../../components/Social"
 
 export default function Signup(){
   return (
@@ -42,13 +43,7 @@ export default function Signup(){
           <Divider>
           ou
         </Divider>
-        <Box sx={{display: "flex", justifyContent: "center"}}>
-          <Stack spacing="1rem" direction="row">
-            <Typography>Facebook</Typography>
-            <Typography>Google</Typography>
-            <Typography>Apple</Typography>
-          </Stack>
-        </Box>
+        <Social/>
         </FormControl>
       </Box>
       <Circle background="#FFC704" left="-8rem"/>

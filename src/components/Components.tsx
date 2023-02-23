@@ -3,7 +3,7 @@ import {
   BtnPrimaryComponent,
   BtnSecondaryComponent,
   BtnWarmComponent,
-} from "./Buttons/Buttons.component";
+} from "./Button/Buttons.component";
 import CardComponent from "./Cards/Card.component";
 import HeadingComponent from "./heading/Heading.component";
 import { MyImageComponent } from "./Image/Image";

@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt-br">
       <Head>
         <link
           rel="stylesheet"
@@ -11,6 +11,7 @@ export default function Document() {
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossOrigin="anonymous"
         ></link>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
