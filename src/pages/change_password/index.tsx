@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BtnWarmComponent, CircleTopComponent, HeadingComponent, MyImageComponent } from "../../components/Components";
-import { LoginCard, LoginContainer } from "../login/index.style";
+import { ResetPasswordContainer, ResetPasswordCard } from "./index.style";
 
 export default function ChangePasswordPage() {
   return (
@@ -12,8 +12,8 @@ export default function ChangePasswordPage() {
         height={"450px"}
         top={""}
       />
-      <LoginContainer>
-        <LoginCard className="container-fluid d-flex justify-content-center">
+      <ResetPasswordContainer>
+        <ResetPasswordCard className="container-fluid d-flex justify-content-center">
           <div className="form">
             <div className="row">
               <div className="col-md-12 d-flex justify-content-center">
@@ -62,8 +62,8 @@ export default function ChangePasswordPage() {
              
             </div>
           </div>
-        </LoginCard>
-      </LoginContainer>
+        </ResetPasswordCard>
+      </ResetPasswordContainer>
     </>
   );
 }

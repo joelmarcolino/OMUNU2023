@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 
 export const SignupCard = styled.div`
-  margin: 20px;
   padding: 20px;
-  height: 700px;
-  width: 550px;
+  height: 400px;
+  width: 300px;
   position: relative;
   box-shadow: 0px 0px 8px #00000045;
   background: #fff;
-  z-index: 999999;
   display: flex;
   justify-content: center;
   border-radius: 5px;

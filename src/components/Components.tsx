@@ -6,9 +6,9 @@ import {
 } from "./Buttons/Buttons.component";
 import CardComponent from "./Cards/Card.component";
 import HeadingComponent from "./heading/Heading.component";
-import { MyImageComponent } from "./Image/Image.component";
-import { HomeNavbarComponent } from "./Navbar/Navbar.component";
-import CircleTopComponent, { CircleBottomComponent } from "./Solids Effects/Circle.component";
+import { MyImageComponent } from "./Image/Image";
+import { HomeNavbarComponent } from "./Navbar";
+import CircleTopComponent, { CircleBottomComponent } from "./Solids Effects/Circle";
 
 export {
   MyImageComponent,

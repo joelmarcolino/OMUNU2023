@@ -1,103 +1,56 @@
-import Link from "next/link";
-import React from "react";
-import {
-  BtnWarmComponent,
-  CircleBottomComponent,
-  CircleTopComponent,
-  MyImageComponent,
-} from "../../components/Components";
-import { LoginCard, LoginContainer } from "./index.style";
+import {Container, Box, FormControl, Stack, Typography, Button, Divider } from "@mui/material"
+import { Input } from "../../components/input"
+import { ImageComponent } from "../../components/Image/Image"
+import logo from "../../../public/omunu_logo.png"
+import { Circle } from "../../components/Solids Effects/Circle"
 
-export default function Login() {
+export default function Signup(){
   return (
-    <>
-      <CircleTopComponent
-        image={"/Ellipse6.png"}
-        width={"350px"}
-        height={"300px"}
-        location={true}
-      />
-
-      <LoginContainer className="container-fluid">
-        <LoginCard className="container">
-          <div className="form">
-            <div className="row">
-              <div className="col-md-12 d-flex justify-content-center">
-                <MyImageComponent
-                  name={"/login.png"}
-                  width={120}
-                  height={100}
-                />
-              </div>
-            </div>
-            <div className="row mt-5">
-              <div className="col-md-12">
-                <input
-                  type="email"
-                  className="form-control email  shadow-none outline-none border-none p-3"
-                  name=""
-                  id=""
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-md-12 ">
-                <input
-                  type="password"
-                  className="form-control password shadow-none outline-none border-none p-3"
-                  name=""
-                  id=""
-                  placeholder="Password"
-                />
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-md-12 text-center ">
-                <BtnWarmComponent
-                  desc={"Criar"}
-                  w={"100%"}
-                  _className={"p-3"}
-                />
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-md-12 d-flex justify-content-center">
-                <Link
-                  href={"signup"}
-                  className={"text-decoration-none text-dark"}
-                >
-                  <small>Não tem conta? Crie</small>
-                </Link>
-              </div>
-
-              <div className="col-md-12 d-flex justify-content-center">
-                <Link
-                  href={"/"}
-                  className={"text-decoration-none text-dark"}
-                >
-                  <small>Voltar</small>
-                </Link>
-              </div>
-              <div className="col-md-12 d-flex justify-content-center">
-                <Link
-                  href={"change_password"}
-                  className={"text-decoration-none text-dark"}
-                >
-                  <small className="text-danger">Esqueceu password?</small>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </LoginCard>
-      </LoginContainer>
-
-      <CircleBottomComponent
-        image={"/Ellipse7.png"}
-        width={"300px"}
-        height={"300px"}
-        location={true}
-      />
-    </>
-  );
+      <Container maxWidth="lg">
+        <Circle background="#385A64" left="70rem" top="-10rem"/>
+        <Box sx={{m: "1rem"}}>
+          <ImageComponent name={logo} height={800} width={100}/>
+        </Box>
+        <Typography
+        sx={{
+          textAlign: "center",
+          fontWeight: "bold",
+          fontSize: "30px",
+          color: "#385A64"
+        }}>
+          Entrar
+        </Typography>
+        <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", mt: "1rem"}}>
+          <FormControl sx={{width: "20rem"}}>
+            <Stack spacing="1rem" sx={{w: "2000px"}}>
+              <Input type="email" placeholder="Email" />
+              <Input type="password" placeholder="Senha" />
+            </Stack>
+            <Button 
+              variant="contained" 
+              sx={{
+                mt: "1rem", 
+                height: "50px",
+                background: "#FFC704", 
+                color: "white", 
+                fontWeight: "bold"
+                }}>
+                  Entrar
+            </Button>
+            <Typography sx={{textAlign: "center", m: "1rem", fontWeight: "bold"}}>Recuperar Acesso</Typography>
+            <Divider>
+            ou
+          </Divider>
+          <Box sx={{display: "flex", justifyContent: "center"}}>
+            <Stack spacing="1rem" direction="row">
+              <Typography>Facebook</Typography>
+              <Typography>Google</Typography>
+              <Typography>Apple</Typography>
+            </Stack>
+          </Box>
+          </FormControl>
+        </Box>
+        <Circle background="#FFC704" left="-8rem"/>
+      </Container>
+  )
 }

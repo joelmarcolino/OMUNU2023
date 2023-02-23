@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const LoginCard = styled.div`
   margin: 20px;
   padding: 20px;
-  height: 550px;
-  width: 550px;
+  height: 50px;
+  width: 60px;
   position: relative;
   box-shadow: 0px 0px 8px #00000045;
   background: #fff;
