@@ -10,9 +10,9 @@ export const Navbar = () => {
       <Circle background="#385A64" right="-8rem" top="-4rem"/>
       <Circle background="#FFC704" right="-15rem" top="10rem"/>
       <Box sx={{m: "1rem"}}>
-        <ImageComponent name={logo} height={900} width={100}/>
+        <ImageComponent name={logo} height={900} width={150}/>
       </Box>
-      <List sx={{display: "flex", cursor: "pointer"}}>
+      <List sx={{display: "flex", cursor: "pointer", ml: "18rem"}}>
         <ListItem sx={{fontSize: "20px", fontWeight: "bold"}}>
         <Link href="/" style={{textDecoration: "none", color: "#385A64"}}>Home</Link>
         </ListItem>

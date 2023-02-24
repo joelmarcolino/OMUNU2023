@@ -1,6 +1,7 @@
 import {Container, Box, FormControl, Stack, Typography, Button, Divider } from "@mui/material"
 import { Input } from "../../components/input"
 import { ImageComponent } from "../../components/Image/Image"
+import Link from "next/link"
 import logo from "../../../public/omunu_logo.png"
 import { Circle } from "../../components/Solids Effects/Circle"
 import { Social } from "../../components/Social"
@@ -19,7 +20,7 @@ export default function Signup(){
           fontSize: "30px",
           color: "#385A64"
         }}>
-          Entrar
+          LOG <span>II</span> N
         </Typography>
         <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", mt: "1rem"}}>
           <FormControl sx={{width: "20rem"}}>
@@ -38,7 +39,7 @@ export default function Signup(){
                 }}>
                   Entrar
             </Button>
-            <Typography sx={{textAlign: "center", m: "1rem", fontWeight: "bold"}}>Recuperar Acesso</Typography>
+            <Typography sx={{textAlign: "center", m: "1rem", fontWeight: "bold"}}><Link href="/change_password" style={{textDecoration: "none", color: "#385A64"}}>Recuperar Senha</Link></Typography>
             <Divider>
             ou
           </Divider>

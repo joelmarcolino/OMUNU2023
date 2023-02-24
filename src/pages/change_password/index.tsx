@@ -19,7 +19,7 @@ export default function Signup(){
           fontSize: "30px",
           color: "#385A64"
         }}>
-          Entrar
+          Mudar Senha
         </Typography>
         <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", mt: "1rem"}}>
           <FormControl sx={{width: "20rem"}}>
@@ -35,9 +35,8 @@ export default function Signup(){
                 color: "white", 
                 fontWeight: "bold"
                 }}>
-                  Mudar Senha
+                  Resetar
             </Button>
-            <Typography sx={{textAlign: "center", m: "1rem", fontWeight: "bold"}}>Recuperar Acesso</Typography>
             <Divider>
             ou
           </Divider>
