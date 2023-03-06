@@ -4,7 +4,8 @@ import { Navbar } from "../../components/Navbar"
 
 export default function Sobre(){
   return (
-    <Container maxWidth="lg">
+    <>
+    <Container maxWidth="lg" sx={{height: "100vh"}}>
       <Navbar/>
       <Box sx={{mt: "5rem"}}>
             <Typography
@@ -20,7 +21,8 @@ export default function Sobre(){
               Entra na onda e descobre a magia infantil com frases e livros para alunos vinculado no âmbito da educação para o desenvolvimento de escrituras dando assim aberturas para leitores infantis no contexto e nos exercícios propostos na educação infantil, com a finalmente de criar crianças com incentivo de inovação no processo da educação.
               </Typography>
       </Box>
-      <Footer />
     </Container>
+    <Footer />
+    </>
   )
 }

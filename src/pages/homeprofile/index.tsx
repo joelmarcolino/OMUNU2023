@@ -10,6 +10,7 @@ export default function HomeProfile(){
     const router = useRouter()
 
     return (
+        <>
         <Container maxWidth="lg">
             <Head>
                 <title>Omunu | Home</title>
@@ -30,7 +31,7 @@ export default function HomeProfile(){
                 <Grid container>
                 {
                     Books.map((book, index) => (
-                        <Grid xs={12} md={3}>
+                        <Grid item xs={12} md={3} key={index}>
                             <Box sx={{m: "1rem"}} onClick={() => router.push(`/book/?book_id=${index}`)}>
                                 <ImageComponent name={book.image} height={600} width={500}/>
                                 <Typography sx={{fontWeight: "bold", color: "#385A64"}}>{book.name}</Typography>
@@ -41,7 +42,8 @@ export default function HomeProfile(){
                         }
                 </Grid>
             </Box>
-            <Footer/>
         </Container>
+        <Footer />
+        </>
     )
 }

@@ -12,6 +12,7 @@ export default function Signup(){
       <Box sx={{m: "1rem"}}>
         <ImageComponent name={logo} height={800} width={100}/>
       </Box>
+      <Box  sx={{boxShadow: "1px 1px 10px gray", width: "30rem", margin: "auto", padding: "2rem", borderRadius: "10px"}}>
       <Typography
       sx={{
         textAlign: "center",
@@ -45,6 +46,7 @@ export default function Signup(){
         </Divider>
         <Social/>
         </FormControl>
+        <Box/>
       </Box>
       <Circle background="#FFC704" left="-8rem"/>
     </Container>

@@ -6,7 +6,7 @@ import { yellow } from '@mui/material/colors';
 import { Container, Button, Box, Typography, Divider, Grid } from "@mui/material"
 import { Navbar } from "../../components/Navbar"
 import { ImageComponent } from "../../components/Image/Image"
-import person from "../../../public/personReading.png"
+import person from "../../../public/new_page.png"
 import { Footer } from "../../components/Footer"
 import { Books } from "../../mock/books";
 
@@ -30,6 +30,7 @@ export default function Home() {
   }));
 
   return (
+    <>
     <Container maxWidth="lg">
       <Navbar />
       <Divider sx={{width: "100%"}}/>
@@ -90,7 +91,7 @@ export default function Home() {
         <Grid container>
             {
               Books.map((book, index) => (
-                <Grid item xs={12} md={3}>
+                <Grid item xs={12} md={3} key={index}>
                     <Box sx={{m: "1rem"}} onClick={() => router.push(`/book/?book_id=${index}`)}>
                       <ImageComponent name={book.image} height={600} width={500}/>
                           <Typography sx={{fontWeight: "bold", color: "#385A64"}}>{book.name}</Typography>
@@ -101,7 +102,8 @@ export default function Home() {
               }
           </Grid>
       </Box>
-      <Footer />
     </Container>
+    <Footer />
+    </>
   )
 }
