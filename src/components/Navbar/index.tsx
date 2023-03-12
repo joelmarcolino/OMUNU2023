@@ -43,7 +43,7 @@ export const Navbar = () => {
             borderRadius: "10px"
           }}>
               <Link
-                href="/signup"
+                href="/login"
                 style={{
                   textDecoration: "none",
                   color: "white"
