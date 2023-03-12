@@ -1,12 +1,17 @@
 import Link from "next/link"
-import { Box, List, ListItem } from "@mui/material"
+import { Box, List, ListItem, Typography } from "@mui/material"
 import { ImageComponent } from "../Image/Image"
 import logo from "../../../public/omunu_logo.png"
 import {Button as MuiButton, ButtonProps} from "@mui/material"
 import { styled } from '@mui/material/styles';
 import { yellow } from '@mui/material/colors';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export const Navbar = () => {
+
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
 
   const YellowToBlue = styled(MuiButton)<ButtonProps>(({ theme }) => ({
     color: theme.palette.getContrastText(yellow[400]),
@@ -21,7 +26,9 @@ export const Navbar = () => {
       <Box>
         <ImageComponent name={logo} height={900} width={150}/>
       </Box>
-      <List sx={{display: "flex", cursor: "pointer"}}>
+      {!matches ? <Typography>Menu</Typography> : (
+        <>
+        <List sx={{display: "flex", cursor: "pointer"}}>
         <ListItem sx={{fontSize: "20px", fontWeight: "bold"}}>
         <Link href="/" style={{textDecoration: "none", color: "#385A64"}}>Home</Link>
         </ListItem>
@@ -70,6 +77,9 @@ export const Navbar = () => {
               </Link>
         </YellowToBlue>
       </Box>
+      </>
+      )}
+      
     </Box>
   )
 }
