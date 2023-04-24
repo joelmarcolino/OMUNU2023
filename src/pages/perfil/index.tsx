@@ -120,7 +120,7 @@ export default function Perfil(){
                     <Grid container>
                         {
                             Books.map((book, index) => (
-                                <Grid item xs={12} md={3}>
+                                <Grid item xs={12} md={3} key={index}>
                                         <Box sx={{m: "1rem"}} onClick={() => router.push(`/book/?book_id=${index}`)}>
                                             <ImageComponent name={book.image} height={600} width={500}/>
                                             <Typography sx={{fontWeight: "bold", color: "#385A64"}}>{book.name}</Typography>
